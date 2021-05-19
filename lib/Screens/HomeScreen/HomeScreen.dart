@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
 import 'package:taza_hawal/Components/MainAppBar.dart';
-import 'package:taza_hawal/Components/MainDrawer.dart';
 import 'package:taza_hawal/Providers/AppSettingsProvider.dart';
 import 'package:taza_hawal/Utilities/ThemeOf.dart';
 
@@ -24,7 +23,6 @@ class HomeScreen extends StatelessWidget {
           icon: Icons.menu,
         ),
       ),
-      drawer: MainDrawer(),
       endDrawerEnableOpenDragGesture: false,
       backgroundColor: theme(context).backgroundColor,
       body: settings.getCurrentNavigationTab(),

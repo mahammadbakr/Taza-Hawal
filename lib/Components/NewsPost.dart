@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:taza_hawal/Models/News.dart';
+import 'package:taza_hawal/Screens/DetailsScreen/DetailsScreen.dart';
 import 'package:taza_hawal/Utilities/ThemeOf.dart';
 
 import '../Constants.dart';
@@ -13,7 +14,7 @@ class NewsPost extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.pushNamed(context, '/details'),
+      onTap: () => Navigator.pushNamed(context, DetailsScreen.routeDetailsScreen,arguments: news),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(4),

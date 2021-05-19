@@ -45,8 +45,6 @@ class HomeTab extends StatelessWidget {
                   child: Row(
                     children: [
                       Text('Products'),
-                      Spacer(),
-                      Text('See more'),
                     ],
                   ),
                 ),
